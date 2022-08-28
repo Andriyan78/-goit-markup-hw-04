@@ -159,8 +159,8 @@ img{
     margin-right: auto;
     background-image: linear-gradient(
         to right, 
-        #C4C4C4, 
-        rgba(47, 48, 58, 0.4)),
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0)),
         url(../images/Img.jpg);
     background-position: center;
     background-repeat: no-repeat;
