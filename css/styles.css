@@ -18,6 +18,7 @@
     /* Others */
     --btn-radius: 4px;
     --card-set-gap: 30px;
+    --cards-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .page{
     background-color: var(--btnlet-color);
@@ -59,6 +60,13 @@ img{
     max-width: 100%;
     height: auto;  
 }
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 15px;
+}
+/* Секції */
 .team-section, .section{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -66,12 +74,7 @@ img{
 .do-section{
     padding-bottom: 94px;
 }
-.container{
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 15px;
-}
+/* Хедер */
 .webstudio{
     color: var(--btnbg-color);
     font-family: var(--logo-font);
@@ -148,11 +151,24 @@ img{
     padding-top: 32px;
     padding-bottom: 32px;
 }
+/* Секція героя - шапка */
 .hat {
-    background-color: var(--footbcg-color);
+    max-width: 1600px;
+    height: 636px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right, 
+        #C4C4C4, 
+        rgba(47, 48, 58, 0.4)),
+        url(../images/Img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    outline: 1px, solid red;
 }
 .hat-title {
     width: 690px;
@@ -183,6 +199,7 @@ img{
 .request:focus{
     background-color: #188ce8;
 }
+/* Інші секції */
 .title, .title-features {
     font-weight: 700;
     font-size: 14px;
@@ -249,6 +266,11 @@ img{
     letter-spacing: 0.03em;
     width: 270px;   
 }
+.item-team:hover,
+.item-team:focus{
+    box-shadow: var(--cards-box-shadow);
+    cursor: pointer;
+}
 .card-foot{
     padding: 30px;
 }
@@ -258,6 +280,7 @@ img{
     padding-left: 24px;
     padding-right: 24px;
 }
+/* Портфоліо */
 .but, .buttonall{
     font-family: inherit;
     font-weight: 500;
@@ -292,7 +315,7 @@ img{
     margin-left: -30px;
     margin-top: -30px;
 }
-.projects .item{
+.project-item{
     width: 370px;
     flex-basis: calc(100%/3 - 30px);
     margin-left: 30px;
@@ -300,6 +323,11 @@ img{
     border-left: 1px solid var(--border-card-projects);
     border-right: 1px solid var(--border-card-projects);
     border-bottom: 1px solid var(--border-card-projects);
+}
+.project-item:hover,
+.project-item:focus{
+    box-shadow: var(--cards-box-shadow);
+    cursor: pointer;
 }
 .buttonall{
     background-color: var(--btnbg-color);
@@ -316,7 +344,9 @@ img{
     background-color: var(--btnbg-color);
     color: var(--btnlet-color);
     cursor: pointer;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/* Футер */
 .foot{
     background-color: var(--footbcg-color);
     padding-top: 60px;
