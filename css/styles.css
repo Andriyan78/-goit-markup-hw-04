@@ -12,6 +12,7 @@
     --filter-color:#F5F4FA;
     --border-header:#ECECEC;
     --border-card-projects: #EEEEEE;
+    --icon-color:#AFB1B8;
     /* bcg colors */
     --btnbg-color:#2196F3;
     --footbcg-color:#2F303A;
@@ -220,7 +221,7 @@ img{
 .title{
     font-size: 16px;
 }
-.title-features, .hat-title, .title-features-foot{
+.title-features, .hat-title, .title-features-foot,.team-title{
     text-transform: uppercase;
 }
 .team-title {
@@ -259,8 +260,6 @@ img{
     height: 120px;
 }
 .button-icon{
-    width: 70px;
-    height: 70px;
     margin-bottom: var(--card-set-gap);
 }
 .do{
@@ -294,6 +293,26 @@ img{
 }
 .prof{
     margin-bottom: 16px;
+}
+.customer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+}
+.cust-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 106px;
+    height: 60px;
 }
 .socialmedia{
     display:flex; 
@@ -403,9 +422,10 @@ img{
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
 .address{
     margin-top: 20px;
+    max-width: 231px;
+    margin-right: 70px;
 }
 .cityaddr{
     width: 231px;
@@ -439,16 +459,45 @@ img{
 .contacttel:focus {
     color: var(--btnbg-color);
 }
-title-features-foot{
+.footmedia{
+    color: var(--btnlet-color);
+}
+.icon-foot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius:50%;
+    fill: var(--btnlet-color);
+}
+.icon-bt {
+    border: none;
+}
+
+.icon-foot:hover,
+.icon-foot:focus {
+    background-color: var(--btnbg-color);
+    fill: var(--btnlet-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.title-features-foot{
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    margin-bottom: 20px;
 }
 .socialmedia-foot{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 206px;
+    width: 206px;    
+}
+.foot{
+    display: flex;
+    justify-content: flex-start; 
 }

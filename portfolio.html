@@ -32,8 +32,18 @@
       </nav>
       <!--Адреса-->
       <ul class="contacts list">
-        <li><a href="mailto:info@devstudio.com" class="mail area-link link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="tele area-link link">+38 096 111 11 11</a></li>
+        <li class="item-mail area-link">
+          <svg class="button-icon-envelope">
+            <use href="./images/symbol-defs.svg#icon-envelope" width="16", height="12"></use>
+          </svg>
+          <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+        </li>
+        <li class="item-tele area-link">
+          <svg class="button-icon-smartphone">
+            <use href="./images/symbol-defs.svg#icon-smartphone" width="16", height="12"></use>
+          </svg>
+          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+        </li>
       </ul>
      </div>
     </header>
@@ -120,7 +130,10 @@
     </main>
     <footer class="foot">
       <div class="container">
-        <a href="WebStudio" class="webstudio link">Web<span class="accent-foot">Studio</span></a>  
+      <ul class="foot list">
+        <li>          
+        <div class="adr">
+          <a href="WebStudio" class="webstudio link">Web<span class="accent-foot">Studio</span></a> 
       <!--Address-->
       <address>
         <ul class="address list">
@@ -128,9 +141,58 @@
          <a href="https://www.bing.com/maps?osid=e6a7af5f-2d7d-4001-9def-bc70f52463ce&cp=40.768255~-73.9696&lvl=16&v=2&sV=2&form=S00027" class="cityaddr link">695 Park Ave, New York, NY 10065, United States</a>
         </li>
         <li><a href="mailto:info@example.com" class="contactmail link">info@example.com</a></li>
-        <li><a href="tel:+12127724150" class="contacttel link">+1 212-772-4150</a></li>   
+        <li><a href="tel:+12127724150" class="contacttel link">+1 212-772-4150</a></li>         
+        </ul>
+      </address>      
+        </div>
+          
+        </li>
+        <li>
+          <div class="footmedia">
+        <h3 class="title-features-foot">find us on</h3>
+        <ul class="socialmedia-foot list">              
+              <li>
+                <div class="icon-foot">
+                  <a href="#" ></a> 
+                  <svg class="icon-bt">
+                <use href="./images/symbol-defs.svg#icon-instagram-2" width="20", height="20"></use>
+                </svg>
+                </div>              
+                               
+              </li>
+              <li>
+                <div class="icon-foot">
+                  <a href="#" ></a>
+                <svg class="icon-bt">
+                <use href="./images/symbol-defs.svg#icon-twitter-1" width="20", height="20"></use>
+                </svg>
+                </div>               
+                               
+              </li>
+              <li>
+                <div class="icon-foot">
+                  <a href="#"></a> 
+                <svg class="icon-bt">
+                <use href="./images/symbol-defs.svg#icon-facebook-1" width="20", height="20"></use>
+                </svg> 
+                </div>               
+                              
+              </li>
+              <li>
+                <div class="icon-foot">
+                  <a href="#"></a>
+                <svg class="icon-bt">
+                <use href="./images/symbol-defs.svg#icon-linkedin-1" width="20", height="20"></use>
+                </svg>
+                </div>               
+                                
+              </li>
+            </ul>                 
+          </div>
+
+          
+        </li>
       </ul>
-      </address>
       </div>
     </footer>
   </body>
