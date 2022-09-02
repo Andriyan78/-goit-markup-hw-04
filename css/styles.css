@@ -137,14 +137,14 @@ img{
     line-height: 1.14;
     letter-spacing: 0.02em;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 .item-mail:hover,
 .item-mail:focus {
     color: var(--btnbg-color);
-    fill: var(--btnbg-color) ;
+    fill: currentColor ;
 }
 .item-tele:hover,
 .item-tele:focus {
@@ -285,7 +285,7 @@ img{
     text-align: center;
     letter-spacing: 0.03em;
     width: 270px;
-    border-radius: 4px;
+    border-radius: 0px 0px 4px 4px;
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .item-team:hover,
@@ -307,6 +307,7 @@ img{
     width: 170px;
     height: 92px;
     border: 1px solid var(--icon-color);
+    border-radius: 4px;
 }
 .cust-icon {
     display: flex;
@@ -485,14 +486,12 @@ img{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius:50%;
     fill: var(--btnlet-color);
+    cursor: pointer;
 }
 
 .icon-foot:hover,
 .icon-foot:focus {
-    background-color: var(--btnbg-color);
-    fill: var(--btnlet-color);
-    border-radius: 50%;
-    cursor: pointer;
+    background-color: var(--btnbg-color);   
 }
 .title-features-foot{
     font-weight: 700;
@@ -509,5 +508,5 @@ img{
 }
 .footer{
     display: flex;
-    justify-content: flex-start; 
+    align-items: baseline; 
 }
